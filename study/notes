@@ -1,0 +1,27 @@
+Introducing asynchronous JavaScript
+ - Asynchronous programming: A technique that enables your program to start a potentially long-running task 
+ and still be able to be responsive to other events while that task runs, rather than having to wait until
+ that task is finished.
+ - Basically, a technique that allows your program to run multiple tasks at once.
+ - With synchronous programming, the browser waits for each line to finish its work before continuing onto 
+ the next line.
+ - Event handlers are a form of asynchronous programming: you provide a function (the event handler) that
+ will be called, not right away, but whenever the event happens.
+     • Some early asynchronous APIs used events in this way, such as the XMLHttpRequest (XHR) API, which 
+     enables you to make the HTTP requests to a remote server using JavaScript. With XHR, you can retrive
+     data from a URL without having to do a full page refresh.
+     • Example of code: const xhr = new XMLHttpRequest();
+ - An event handler is a particular type of callback.
+     • callback: a function that's passed into another function, with the exception that the callback will
+     be called at the appropriate time.
+     • We don't use calllbacks anymore. We use promises.
+
+How to use promises
+ - Promises: an object returned by an asynchronous function, which represents the current state of the operation.
+ - With promise-based APIs, the asynchronous function starts the operation and returns a Promise object.
+     • The promise object represents the eventual completion (or failure) of an asynchronous operation and its
+     resulting value.
+ - A promise can be in one of the following states:
+     • pending: initial state, neither fulfulled nor rejected
+     • fulfilled: meaning that the operation was completed successfully.
+     • rejected: meaning that the operation failed.
