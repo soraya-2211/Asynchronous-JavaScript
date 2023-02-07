@@ -30,3 +30,6 @@ How to use promises
       response data.
       • In 'images/chaining-promises', the console prints the first item in the products.json file.
       • then() itself returns a promise, which will be completed with the result of the function passed to it.
+ - Catching errors
+       • To support error handling, Promise objects provie a catch() method, which is a lot like then(): you
+       call it an pass in a handler function.
