@@ -1,0 +1,9 @@
+Introducing asynchronous JavaScript
+ - Asynchronous programming: A technique that enables your program to start a potentially long-running task 
+ and still be able to be responsive to other events while that task runs, rather than having to wait until
+ that task is finished.
+ - Basically, a technique that allows your program to run multiple tasks at once.
+ - With synchronous programming, the browser waits for each line to finish its work before continuing onto 
+ the next line.
+ - Event handlers are a form of asynchronous programming: you provide a function (the event handler) that
+ will be called, not right away, but whenever the event happens.
