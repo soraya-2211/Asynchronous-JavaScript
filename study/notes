@@ -25,3 +25,6 @@ How to use promises
      • pending: initial state, neither fulfulled nor rejected
      • fulfilled: meaning that the operation was completed successfully.
      • rejected: meaning that the operation failed.
+ - Chaining promises
+      • With the fetch() API, once you get a Response object, you need to call another function to get the
+      response data.
